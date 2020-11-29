@@ -1,0 +1,21 @@
+spring:
+    profiles:
+        active: prod
+    application:
+        name: event_api
+
+server:
+    port: 9000
+
+service:
+    weatherService: mocked-weather
+    eventService: eventful
+
+api:
+    ssl: false
+    maxTotalNumberOfConnections: 20
+    maxNumberOfConnectionsPerHost: 20
+    connectionRequestTimeoutInMilliSeconds: 60000
+    event:
+        endpoint: http://api.eventful.com/json/events/search
+        key: ENC(Z/kqVARG798tUEvkksEPO9ujFJG9CkskiC99EVyCgdA=)
