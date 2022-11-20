@@ -8,3 +8,4 @@ Eventful open api used for samples : http://api.eventful.com/json/events/search
 
 branch test_Stash
 first change/ stage/commit/ push
+second change / stages but not committed
